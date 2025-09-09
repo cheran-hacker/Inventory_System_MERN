@@ -21,11 +21,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="text-center mt-5">
+    <div className="text-center mt-5 bg-light">
       <ProductSearch products={products} /> {/* Search bar for all products */}
-      <h1>Welcome to Inventory</h1>
-      <p>Your reliable inventory management and shopping system.</p>
-      <ProductCarousel products={products.slice(0, 3)} /> {/* Show first 3 in carousel */}
+      <h1 className="fw-bold display-5 mb-3">Welcome to Inventory</h1>
+      <p className="lead text mb-4 px-md-5 hover-text">Manage inventory effortlessly and shop with confidence</p>
+      <ProductCarousel className="rounded-end" products={products.slice(0, 3)} /> {/* Show first 3 in carousel */}
     </div>
   );
 };
